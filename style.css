@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'OSWALD';
+  src: url(Fonts/Oswald.ttf);
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -9,7 +15,7 @@ body {
   background-image: url('Images/Frame 0.png');
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: oswald regular;
+  font-family: 'OSWALD';
   position: relative;
   overflow: hidden;
 }
@@ -104,13 +110,13 @@ body {
   margin-left: 150px;
   position: absolute;
   top: 80px;
-  font-family: oswald regular;
+  font-family: 'OSWALD';
 }
 #about pre {
   position: absolute;
   margin-left: 40px;
   top: 270px;
-  font-family: oswald regular;
+  font-family: 'OSWALD';
   font-size: 20px;
 }
 
@@ -150,7 +156,7 @@ body {
   margin-left: 150px;
   position: absolute;
   top: 80px;
-  font-family: oswald regular;
+  font-family: 'OSWALD';
 }
 .image-container {
   background: url('Images/Billboard 0.png') center center no-repeat;
@@ -199,7 +205,7 @@ body {
   margin-left: 150px;
   position: absolute;
   top: 80px;
-  font-family: oswald regular;
+  font-family: 'OSWALD';
 }
 #code_portfolio {
   position: absolute;
@@ -316,7 +322,7 @@ body {
   margin-left: 150px;
   position: absolute;
   top: 80px;
-  font-family: oswald regular;
+  font-family: 'OSWALD';
 }
 #papermail {
   position: absolute;
