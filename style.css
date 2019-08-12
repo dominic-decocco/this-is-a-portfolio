@@ -1,0 +1,399 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url('Images/Frame 0.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: oswald regular;
+  position: relative;
+  overflow: hidden;
+}
+#home h3 {
+  font-size: 70px;
+  margin-left: 150px;
+  position: absolute;
+  top: 80px;
+}
+#home h1 {
+  font-size: 200px;
+  margin-left: 150px;
+  position: absolute;
+  top: 70px;
+  line-height: 190px; 
+}
+#home h4 {
+  margin-left: 150px;
+  position: absolute;
+  top: 630px;
+  font-size: 20px;
+}
+
+.shadow {
+  color: #ffeecc;
+  transform: translate(4px, 4px);
+}
+
+#menu {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background-color: black;
+  top: 170px;
+  right: 150px;
+  position: fixed;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#menu_shadow {
+  background-color: #ffbe2e;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  top: 174px;
+  right: 146px;
+  position: fixed;
+  z-index: 9;
+}
+#menu.open {
+  background-color: red;
+
+}
+#burger {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+#burger.spin {
+    transform: rotate(360deg);
+    transition: all 0.6s ease-out
+}    
+.line {
+    width: 40px;
+    height: 5px;
+    margin: 5px;
+    background: #ffbe2e;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+#about {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffbe2e;
+  background-image: url('Images/Frame 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#about h3 {
+  font-size: 70px;
+  margin-left: 150px;
+  position: absolute;
+  top: 80px;
+  font-family: oswald regular;
+}
+#about pre {
+  position: absolute;
+  margin-left: 40px;
+  top: 270px;
+  font-family: oswald regular;
+  font-size: 20px;
+}
+
+#megafone {
+  position: absolute;
+  top: 150px;
+  right: 200px;
+}
+#sound {
+  position: absolute;
+  top: 250px;
+  right: 550px;
+  animation-name: zoom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; 
+}
+@keyframes zoom {
+  from {height: 276px;}
+  to {height: 330px;}
+}
+
+
+
+
+
+#work {
+  height: 100vh;
+  width: 100%;
+  background-image: url('Images/Frame 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#work h3 {
+  font-size: 70px;
+  margin-left: 150px;
+  position: absolute;
+  top: 80px;
+  font-family: oswald regular;
+}
+.image-container {
+  background: url('Images/Billboard 0.png') center center no-repeat;
+  background-size: contain;
+
+  width: 389px;
+  height: 644px;
+  position: absolute;
+  top: 100px;
+  left: 400px;
+
+  transition: all .6s ease-in-out;
+}
+
+.image-container:hover {
+  background-image: url('Images/Billboard 1.png');
+}
+
+#ladder {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}
+#bin {
+  position: absolute;
+  bottom: 50px;
+  right: 200px;
+}
+
+
+
+
+
+#code {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffbe2e;
+  background-image: url('Images/Frame 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#code h3 {
+  font-size: 70px;
+  margin-left: 150px;
+  position: absolute;
+  top: 80px;
+  font-family: oswald regular;
+}
+#code_portfolio {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+#code_quase {
+  position: absolute;
+  top: 70px;
+  left: 450px;
+}
+#code_trckr {
+  position: absolute;
+  top: 100px;
+  right: 300px;
+}
+#computer {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+#wires0 {
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+}
+#wires1 {
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+  animation-name: wires;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wires {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* IMAGES FOR LATER*/
+
+
+.portfolio {
+  background: url('Images/Portfolio 0.png') center center no-repeat;
+  background-size: contain;
+
+  width: 300px;
+  height: 300px;
+
+  transition: all .6s ease-in-out;
+}
+
+.portfolio:hover {
+  background-image: url('Images/Portfolio 1.png');
+}
+
+
+.quase {
+  background: url('Images/Quase 0.png') center center no-repeat;
+  background-size: contain;
+
+  width: 300px;
+  height: 300px;
+
+  transition: all .6s ease-in-out;
+}
+
+.quase:hover {
+  background-image: url('Images/Quase 1.png');
+}
+
+
+.trckr {
+  background: url('Images/Trckr 0.png') center center no-repeat;
+  background-size: contain;
+
+  width: 300px;
+  height: 300px;
+
+  transition: all .6s ease-in-out;
+}
+
+.trckr:hover {
+  background-image: url('Images/Trckr 1.png');
+}
+
+
+
+
+
+
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-image: url('Images/Frame 2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#contact h3 {
+  font-size: 70px;
+  margin-left: 150px;
+  position: absolute;
+  top: 80px;
+  font-family: oswald regular;
+}
+#papermail {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}
+#wind0 {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+}
+#wind1 {
+  position: absolute;
+  bottom: 80px;
+  left: 250px;
+}
+#wind2 {
+  position: absolute;
+  bottom: -200px;
+  left: -400px;
+}
+
+#container_papermail {
+  height: 500px;
+  width: 600px;
+  position: relative;
+  margin-top: 300px;
+}
+
+
+#container_papermail:hover #papermail {
+  transform: translate(150px, -150px);
+  transition: all 1s ease-out;
+}
+#container_papermail:hover #wind0 {
+  transform: translate(200px, -200px);
+  transition: all 1s ease-out;
+}
+#container_papermail:hover #wind1 {
+  transform: translate(100px, -100px);
+  transition: all 1s ease-out;
+}
+#container_papermail:hover #wind2 {
+  transform: translate(300px, -300px);
+  transition: all 1s ease-out;
+  transition-delay: .3s;
+}
+
+#buttonwhatsapp {
+  position: absolute;
+  top: 320px;
+  right: 300px;
+}
+#buttongithub {
+  position: absolute;
+  top: 257px;
+  right: 408px;
+}
+#buttonlinkedin {
+  position: absolute;
+  top: 194px;
+  right: 516px;
+}
+#buttonmail {
+  position: absolute;
+  top: 131px;
+  right: 624px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
