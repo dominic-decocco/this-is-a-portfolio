@@ -1,0 +1,903 @@
+@font-face {
+  font-family: 'OSWALD';
+  src: url(Fonts/Oswald.ttf);
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+  font-family: 'OSWALD'
+}
+
+.frame {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: solid 0.3vw;
+  border-right: solid 0.3vw;
+  border-color: black;
+  height: 100vh;
+  width: 90vw;
+  
+}
+
+.frame_shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: solid 0.3vw;
+  border-right: solid 0.3vw;
+  height: 100vh;
+  width: 90vw;
+  color: #ffeecc;
+  transform: translate(0.2vw, 0.2vw);
+}
+
+.frame_top {
+  position: absolute;
+  top: 7vh;
+  left: 0;
+  right: 0; 
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
+  border: 0.3vw solid black;
+  border-radius: 4vw;
+ 
+}
+.frame_top_shadow {
+  position: absolute;
+  top: 7vh;
+  left: 0;
+  right: 0; 
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
+  border: 0.3vw solid #ffeecc;
+  border-radius: 4vw;
+  transform: translate(0.2vw, 0.2vw);
+}
+
+.frame_bottom {
+  position: absolute;
+  bottom: 7vh;
+  left: 0;
+  right: 0; 
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
+  border: 0.3vw solid black;
+  border-radius: 4vw;
+}
+.frame_bottom_shadow {
+  position: absolute;
+  bottom: 7vh;
+  left: 0;
+  right: 0; 
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
+  border: 0.3vw solid #ffeecc;
+  border-radius: 4vw;
+  transform: translate(0.2vw, 0.2vw);
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  font-family: 'OSWALD';
+}
+h3 {
+  position: absolute;
+  font-size: 8vh;
+  line-height: 10vh;
+  left: 10vw;
+  top: 20vh;
+  margin: 0;
+}
+#home h1 {
+  position: absolute;
+  font-size: 28vh;
+  line-height: 26vh;
+  left: 10vw;
+  top: 30vh;
+  margin: 0;
+}
+#home h4 {
+  position: absolute;
+  left: 10vw;
+  top: 82vh;
+  font-size: 2,5vh;
+  margin: 0;
+}
+
+.shadow {
+  color: #ffeecc;
+  transform: translate(4px, 4px);
+}
+
+#guy {
+  position: absolute;
+  top: 70vh;
+  right: 10vw;
+  height: 20vh;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-image: url('Images/Background About.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+pre {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+  font-family: 'OSWALD';
+  font-size: 2.8vh;
+  margin: 5vh 0 0 0;
+}
+
+#megafone {
+  position: absolute;
+  top: 20vh;
+  right: 10vw;
+  width: 30vw;
+}
+#sound {
+  position: absolute;
+  top: 35vh;
+  right: 35vw;
+  width: 15.5vw;
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+}
+@keyframes zoom {
+  from {width: 15.5vw;}
+  to {width: 20vw;}
+}
+
+
+
+
+
+#work {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.image-container {
+  background: url('Images/Billboard 0.svg') center center no-repeat;
+  background-size: contain;
+
+  height: 85vh;
+  width: 40vw;
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+
+  transition: all .6s ease-in-out;
+}
+
+.image-container:hover {
+  background-image: url('Images/Billboard 1.svg');
+}
+.image-container-small {
+  background: url('Images/Billboard Small 0.svg') center center no-repeat;
+  background-size: contain;
+
+  height: 65vh;
+  width: 30vw;
+  position: absolute;
+  top: 0vh;
+  left: 55vw;
+
+  transition: all .6s ease-in-out;
+}
+
+.image-container-small:hover {
+  background-image: url('Images/Billboard Small 1.svg');
+}
+
+#ladder {
+  position: absolute;
+  bottom: 7vh;
+  left: 7vw;
+  width: 15vw;
+}
+#bin {
+  position: absolute;
+  bottom: 25vh;
+  right: 15vw;
+  width: 4vw;
+}
+
+#tumpero_page {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  visibility: visible;
+}
+
+#buttonandroid {
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  height: 10vh;
+}
+#mobile {
+  position: absolute;
+  right: 200px;
+  top: 300px;
+  z-index: 1;
+}
+#exit {
+  position: absolute;
+  top: 15vh;
+  right: 5vw;
+  cursor: pointer;
+}
+#line1 {
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+#line2 {
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+#tumpero_page.open {
+  visibility: visible;
+}
+#tumpero_page.close {
+  visibility: hidden;
+}
+
+#carousel_show2 {
+  position: absolute;
+  top: 35vh;
+  left: 10vw;
+  height: 341px;
+  width: 413px;
+  
+  margin: auto;
+  overflow: hidden;
+}
+#carousel_slide2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#carousel_slide2 div {
+  width: 100%;
+}
+#carousel_slide2 div {
+  height: 341px;
+  width: 413px;
+  font-size: 1.5vw;
+}
+#carousel_slide2 div span {
+  font-size: 1vw;
+  color: gray;
+}
+#carousel_show {
+  position: absolute;
+  top: 352px;
+  right: 303px;
+  height: 176px;
+  width: 310px;
+  transform: rotate(-60deg) skewY(30deg);
+  margin: auto;
+  overflow: hidden;
+}
+#carousel_slide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#carousel_slide img {
+  width: 310px;
+  object-fit: cover;
+}
+#prevBtn {
+  cursor: pointer;  
+  position: absolute;
+  right: 550px;
+  top: 350px;
+  z-index: 3;
+}
+#nextBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 260px;
+  top: 535px;
+  z-index: 3;
+}
+
+#artwork_page {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+#artwork_page h3 {
+  font-size: 5vh;
+  left: 5vw;
+  top: 10vh;
+}
+#artwork_page h4{
+  position: absolute;
+  left: 5vw;
+  top: 15vh;
+}
+#artwork_page h4 a {
+  text-decoration: none;
+}
+#gallery_wrap {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 70vh;
+  padding: 25vh 5vw 10vh 5vw;
+}
+
+#exit3 {
+  position: absolute;
+  top: 15vh;
+  right: 5vw;
+  cursor: pointer;
+  z-index: 4;
+
+}
+#line5 {
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+#line6 {
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: flex 0.8s ease;
+  border: 0.3vh solid white;
+}
+.item:hover {
+  flex: 7;
+}
+.item1 {
+  background-image: url(Images/Mac1.jpg);
+}
+.item2 {
+  background-image: url(Images/Mac2.jpg);
+}
+.item3 {
+  background-image: url(Images/Mac3.jpg);
+}
+.item4 {
+  background-image: url(Images/Mac4.jpg);
+}
+.item5 {
+  background-image: url(Images/Mac5.jpg);
+}
+.item6 {
+  background-image: url(Images/Julia1.jpg);
+}
+.item7 {
+  background-image: url(Images/Julia2.jpg);
+}
+.item8 {
+  background-image: url(Images/Julia3.jpg);
+}
+.item9 {
+  background-image: url(Images/Julia4.jpg);
+}
+.item10 {
+  background-image: url(Images/Julia5.jpg);
+}
+.item11 {
+  background-image: url(Images/Braza1.jpg);
+}
+.item12 {
+  background-image: url(Images/Braza2.jpg);
+}
+.item13 {
+  background-image: url(Images/Braza4.jpg);
+}
+.item14 {
+  background-image: url(Images/Braza5.jpg);
+}
+.item15 {
+  background-image: url(Images/Braza3.jpg);
+}
+.item16 {
+  background-image: url(Images/Tumpero1.jpg);
+}
+.item17 {
+  background-image: url(Images/Tumpero2.jpg);
+}
+.item18 {
+  background-image: url(Images/Tumpero3.jpg);
+}
+.item19 {
+  background-image: url(Images/Tumpero4.jpg);
+}
+.item20 {
+  background-image: url(Images/Tumpero5.jpg);
+}
+.item21 {
+  background-image: url(Images/Tower1.jpg);
+}
+.item22 {
+  background-image: url(Images/Tower2.jpg);
+}
+.item23 {
+  background-image: url(Images/Tower3.jpg);
+}
+.item24 {
+  background-image: url(Images/Tower4.jpg);
+}
+.item25 {
+  background-image: url(Images/Tower5.jpg);
+}
+
+#artwork_page.open {
+  visibility: visible;
+}
+#artwork_page.close {
+  visibility: hidden;
+}
+#work.expand {
+  height: 500vh;
+}
+#work.contract {
+  height: 100vh;
+}
+#tower {
+  position: absolute;
+  top: 0;
+}
+#julia {
+  position: absolute;
+  top: 100vh;
+}
+#cartaz {
+  position: absolute;
+  top: 200vh;
+}
+#mac {
+  position: absolute;
+  top: 300vh;
+}
+#ad_tumpero {
+  position: absolute;
+  top: 400vh;
+}
+
+#artwork_page.open {
+  visibility: visible;
+}
+#artwork_page.close {
+  visibility: hidden;
+}
+
+#code {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-image: url('Images/Background Code.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio {
+  background: url('Images/Code Portfolio 0.svg') center center no-repeat;
+  background-size: contain;
+
+  width: 25vw;
+  height: 39vh;
+  position: absolute;
+  top: 52.7vh;
+  left: 11.7vw;
+
+  transition: all .6s ease-in-out;
+}
+
+.portfolio:hover {
+  background-image: url('Images/Code Portfolio 1.svg');
+}
+
+
+.quase {
+  background: url('Images/Code Tv Quase 0.svg') center center no-repeat;
+  background-size: contain;
+
+  width: 25vw;
+  height: 39vh;
+  position: absolute;
+  top: 29.5vh;
+  left: 34.2vw;
+
+  transition: all .6s ease-in-out;
+}
+
+.quase:hover {
+  background-image: url('Images/Code Tv Quase 1.svg');
+}
+
+
+.trckr {
+  background: url('Images/Code Trckr 0.svg') center center no-repeat;
+  background-size: contain;
+
+  width: 25vw;
+  height: 39vh;
+  position: absolute;
+  top: 7.4vh;
+  left: 55.6vw;
+
+  transition: all .6s ease-in-out;
+}
+
+.trckr:hover {
+  background-image: url('Images/Code Trckr 1.svg');
+}
+
+
+#computer {
+  position: absolute;
+  bottom: 6.5vh;
+  right: 7vw;
+  width: 32vw;
+}
+#wires0 {
+  position: absolute;
+  bottom: 2.6vh;
+  right: 6.6vw;
+  width: 35vw;
+}
+#wires1 {
+  position: absolute;
+  bottom: 2.6vh;
+  right: 6.6vw;
+  width: 35vw;
+  animation-name: wires;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wires {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#quase_page {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url('Images/Background Code.svg');
+  position: relative;
+  visibility: hidden;
+}
+
+#exit2 {
+  position: absolute;
+  top: 15vh;
+  right: 5vw;
+  cursor: pointer;
+  z-index: 1;
+}
+#line3 {
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+#line4 {
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+#quase_title {
+  position: absolute;
+  top: 100px;
+  right: 100px; 
+}
+#code_live_website {
+  position: absolute;
+  left: 560px;
+  top: 180px;
+}
+#window_choque {
+  position: absolute;
+  left: 150px;
+  top: 130px;
+}
+#window_tvquase {
+  position: absolute;
+  left: 440px;
+  top: 350px;
+}
+#window_falha {
+  position: absolute;
+  left: 320px;
+  top: 520px;
+}
+#window_oupm {
+  position: absolute;
+  left: 190px;
+  top: 450px;
+}
+
+#tvquase_hyperlink_code {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 170px;
+  left: 820px;
+}
+#tvquase_hyperlink_live {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 410px;
+  left: 1090px;
+}
+
+#quase_page.open {
+  visibility: visible;
+}
+#quase_page.close {
+  visibility: hidden;
+}
+
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-image: url('Images/Background Contact.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+}
+#papermail {
+  position: absolute;
+  bottom: 6.5vh;
+  left: 7vw;
+  width: 34vw;
+}
+#wind0 {
+  position: absolute;
+  bottom: 26vh;
+  left: 7vw;
+  width: 7vw;
+}
+#wind1 {
+  position: absolute;
+  bottom: 10.4vh;
+  left: 18vw;
+  width: 4vw; 
+}
+#wind2 {
+  position: absolute;
+  bottom: -26vh;
+  left: -30vw;
+  width: 40vw
+}
+
+#container_papermail {
+  height: 65vh;
+  width: 44vw;
+  position: relative;
+  margin-top: 39vh;
+}
+
+
+#container_papermail:hover #papermail {
+  transform: translate(150px, -150px);
+  transition: all 1s ease-out;
+}
+#container_papermail:hover #wind0 {
+  transform: translate(200px, -200px);
+  transition: all 1s ease-out;
+}
+#container_papermail:hover #wind1 {
+  transform: translate(100px, -100px);
+  transition: all 1s ease-out;
+}
+#container_papermail:hover #wind2 {
+  transform: translate(300px, -300px);
+  transition: all 1s ease-out;
+  transition-delay: .3s;
+}
+
+#buttonbehance {
+  position: absolute;
+  top: 53.2vh;
+  left: 59.7vw;
+  width: 10vw;
+}
+#buttongithub {
+  position: absolute;
+  top: 38.6vh;
+  left: 46.7vw;
+  width: 10vw;
+}
+#buttonlinkedin {
+  position: absolute;
+  top: 24.9vh;
+  left: 34.6vw;
+  width: 10vw;
+}
+#buttonmail {
+  position: absolute;
+  top: 0;
+  left: 77.2vw;
+  width: 10vw;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #home h1{
+    font-size: 20vh;
+    line-height: 18vh;
+  }
+  #home h4 {
+    top: 67vh;
+  }
+
+  #about h3,
+  #work h3,
+  #code h3,
+  #contact h3 {
+    top: 10vh;
+    font-size: 6vh; 
+  }
+
+  #gallery_wrap {
+    flex-direction: column;
+    height: 80vh;
+    padding-top: 15vh;
+  }
+  #artwork_page h3 {
+    font-size: 5vw;
+    top: 2vh;
+  }
+  #artwork_page h4{
+    position: absolute;
+    padding-right: 5vw;
+    top: 7vh;
+    font-size: 2vw;
+  }
+  #exit3 {
+    top: 7vh;
+    height: 3vh;
+    width: 3vh;
+  }
+  #line5 {
+    height: 0.2vh;
+    width: 3vw;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+  #line6 {
+    height: 0.2vh;
+    width: 3vw;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
+  pre {
+    position: absolute;
+    left: 10vw;
+    top: 15vh;
+    font-size: 2.5vh;
+    margin: 5vh 0 0 0;
+  }
+  #megafone {
+    position: absolute;
+    top: 60vh;
+    right: 10vw;
+    width: 60vw;
+  }
+  #sound {
+    position: absolute;
+    top: 70vh;
+    right: 60vw;
+    width: 15.5vw;
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+  }
+
+  .trckr,
+  .quase,
+  .portfolio {
+    width: 45vw;
+    transform: translate(-5vw);
+  }
+  #wires0,
+  #wires1 {
+    transform: translate(0vh, -2vw);
+  }
+  #contact {
+    background-position: center;
+  }
+  #contact a img {
+    width: 20vw;
+  }
+  #buttonlinkedin {
+    top: 34.9vh;
+    left: 14.6vw;
+  }
+  #buttongithub {
+    top: 42.6vh;
+    left: 36.7vw;
+  }
+  #buttonbehance {
+    top: 51.2vh;
+    left: 59.7vw;
+  }
+  #buttonandroid {
+    top: 10vh;
+    left: 55vw;
+    width: 7vw;
+  }
+  #carousel_show2 {
+    position: absolute;
+    left: 10vw;
+    top: 15vh;
+    margin: 5vh 0 0 0;
+  }
+  #carousel_slide2 div {
+    height: 341px;
+    width: 413px;
+    font-size: 3vw;
+  }
+  #carousel_slide2 div span {
+    font-size: 2vw;
+    color: gray;
+
+}
+
+
