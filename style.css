@@ -178,7 +178,7 @@ pre {
   overflow: hidden;
 }
 .image-container {
-  background: url('Images/Billboard 0.svg') center center no-repeat;
+  background: url('Images/Billboard 0.png') center center no-repeat;
   background-size: contain;
 
   height: 85vh;
@@ -191,10 +191,10 @@ pre {
 }
 
 .image-container:hover {
-  background-image: url('Images/Billboard 1.svg');
+  background-image: url('Images/Billboard 1.png');
 }
 .image-container-small {
-  background: url('Images/Billboard Small 0.svg') center center no-repeat;
+  background: url('Images/Billboard Small 0.png') center center no-repeat;
   background-size: contain;
 
   height: 65vh;
@@ -207,7 +207,7 @@ pre {
 }
 
 .image-container-small:hover {
-  background-image: url('Images/Billboard Small 1.svg');
+  background-image: url('Images/Billboard Small 1.png');
 }
 
 #ladder {
@@ -343,11 +343,13 @@ pre {
   font-size: 5vh;
   left: 5vw;
   top: 10vh;
+  font-weight: lighter;
 }
 #artwork_page h4{
   position: absolute;
   left: 5vw;
   top: 15vh;
+  font-weight: lighter;
 }
 #artwork_page h4 a {
   text-decoration: none;
@@ -389,7 +391,7 @@ pre {
   transition: flex 0.8s ease;
   border: 0.3vh solid white;
 }
-.item:hover, .item:active {
+.item:hover {
   flex: 7;
 }
 .item1 {

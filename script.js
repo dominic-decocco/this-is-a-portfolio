@@ -152,6 +152,10 @@ carouselSlide.addEventListener('transitionend', ()=> {
 })
 
 
+// Functiom to expand images on carousel
+function expand() {
+	document.getElementsByClassName('item').style = 'flex: 7' 
+}
 
 
 
@@ -164,7 +168,6 @@ $(function(){
         $('img').toggleClass('hidden');
     });
 });
-
 
 
 
