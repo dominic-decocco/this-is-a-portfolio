@@ -275,9 +275,9 @@ pre {
   left: 10vw;
   height: 341px;
   width: 413px;
-  
   margin: auto;
   overflow: hidden;
+  margin: 5vh 0 0 0;
 }
 #carousel_slide2 {
   display: flex;
@@ -285,12 +285,10 @@ pre {
   width: 100%;
 }
 #carousel_slide2 div {
-  width: 100%;
-}
-#carousel_slide2 div {
   height: 341px;
   width: 413px;
   font-size: 1.3vw;
+  width: 100%;
 }
 #carousel_slide2 div span {
   font-size: 1vw;
@@ -522,7 +520,7 @@ pre {
 }
 
 .portfolio {
-  background: url('Images/Code Portfolio 0.svg') center center no-repeat;
+  background: url('Images/Code Portfolio 0.png') center center no-repeat;
   background-size: contain;
 
   width: 25vw;
@@ -535,12 +533,12 @@ pre {
 }
 
 .portfolio:hover {
-  background-image: url('Images/Code Portfolio 1.svg');
+  background-image: url('Images/Code Portfolio 1.png');
 }
 
 
 .quase {
-  background: url('Images/Code Tv Quase 0.svg') center center no-repeat;
+  background: url('Images/Code Tv Quase 0.png') center center no-repeat;
   background-size: contain;
 
   width: 25vw;
@@ -553,12 +551,12 @@ pre {
 }
 
 .quase:hover {
-  background-image: url('Images/Code Tv Quase 1.svg');
+  background-image: url('Images/Code Tv Quase 1.png');
 }
 
 
 .trckr {
-  background: url('Images/Code Trckr 0.svg') center center no-repeat;
+  background: url('Images/Code Trckr 0.png') center center no-repeat;
   background-size: contain;
 
   width: 25vw;
@@ -571,7 +569,7 @@ pre {
 }
 
 .trckr:hover {
-  background-image: url('Images/Code Trckr 1.svg');
+  background-image: url('Images/Code Trckr 1.png');
 }
 
 
@@ -812,22 +810,38 @@ pre {
     top: 7vh;
     font-size: 2vw;
   }
-  #exit3 {
+  #exit, #exit2, #exit3 {
     top: 7vh;
     height: 3vh;
     width: 3vh;
   }
-  #line5 {
+  #line1, #line3, #line5 {
     height: 0.2vh;
     width: 3vw;
     background-color: black;
     transform: rotate(45deg);
   }
-  #line6 {
+  #line2, #line4, #line6 {
     height: 0.2vh;
     width: 3vw;
     background-color: black;
     transform: rotate(-45deg);
+  }
+  #mobile {
+    right: -40px;
+    top: 330px;
+  }
+  #carousel_show {
+    top: 380px;
+    right: 63px;
+  }
+  #nextBtn {
+    right: 40px;
+    top: 555px;
+  }
+  #prevBtn {
+    right: 300px;
+    top: 370px;
   }
   pre {
     position: absolute;
@@ -880,19 +894,18 @@ pre {
     left: 59.7vw;
   }
   #buttonandroid {
-    top: 10vh;
+    top: 5vh;
     left: 55vw;
     width: 7vw;
   }
   #carousel_show2 {
     position: absolute;
     left: 10vw;
-    top: 15vh;
-    margin: 5vh 0 0 0;
+    top: 10vh;
   }
   #carousel_slide2 div {
     height: 341px;
-    width: 413px;
+    width: 263px;
     font-size: 3vw;
     font-weight: lighter;
   }
