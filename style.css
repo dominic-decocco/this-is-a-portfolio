@@ -729,7 +729,7 @@ span {
     margin: -18vh 0 0 -33vh;
   }
   #contact {
-    background-image: none;
+    background-position: top;
   }
   #contact a img {
     width: 14vh;
