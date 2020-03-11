@@ -169,23 +169,13 @@ span {
   top: 302px;
   z-index: 1;
 }
-#exit {
+.exit {
   position: absolute;
-  top: 15vh;
+  height: 5vh;
+  width: 5vh;
+  top: 10vh;
   right: 5vw;
   cursor: pointer;
-}
-#line1 {
-  height: 4px;
-  width: 35px;
-  background-color: black;
-  transform: rotate(45deg);
-}
-#line2 {
-  height: 4px;
-  width: 35px;
-  background-color: black;
-  transform: rotate(-45deg);
 }
 
 #tumpero_page.open {
@@ -287,27 +277,6 @@ span {
   width: 90vw;
   height: 70vh;
   padding: 25vh 5vw 10vh 5vw;
-}
-
-#exit3 {
-  position: absolute;
-  top: 15vh;
-  right: 5vw;
-  cursor: pointer;
-  z-index: 4;
-
-}
-#line5 {
-  height: 4px;
-  width: 35px;
-  background-color: black;
-  transform: rotate(45deg);
-}
-#line6 {
-  height: 4px;
-  width: 35px;
-  background-color: black;
-  transform: rotate(-45deg);
 }
 .item {
   flex: 1;
@@ -487,25 +456,6 @@ span {
   visibility: hidden;
 }
 
-#exit2 {
-  position: absolute;
-  top: 15vh;
-  right: 5vw;
-  cursor: pointer;
-  z-index: 1;
-}
-#line3 {
-  height: 4px;
-  width: 35px;
-  background-color: black;
-  transform: rotate(45deg);
-}
-#line4 {
-  height: 4px;
-  width: 35px;
-  background-color: black;
-  transform: rotate(-45deg);
-}
 #button_code {
   position: absolute;
   height: 20vh;
@@ -607,19 +557,22 @@ span {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
   #h3 {
-    top: 23vh;
+    top: 18vh;
     font-size: 7vw;
     line-height: 5vh;
     word-spacing: -1vw;
   }
   #portfolio {
     width: 80vw;
-    top: 28vh;
+    top: 23vh;
   }
   #h4 {
     font-size: 3vw;
+    bottom: 15vh; 
   }
 
   #about h3,
@@ -663,18 +616,6 @@ span {
     top: 7vh;
     height: 3vh;
     width: 3vh;
-  }
-  #line1, #line3, #line5 {
-    height: 0.2vh;
-    width: 3vw;
-    background-color: black;
-    transform: rotate(45deg);
-  }
-  #line2, #line4, #line6 {
-    height: 0.2vh;
-    width: 3vw;
-    background-color: black;
-    transform: rotate(-45deg);
   }
   #mobile {
     right: -40px;
@@ -748,9 +689,9 @@ span {
     top: 69vh;
   }
   #buttonandroid {
-    top: 5vh;
+    top: 6vh;
     left: 55vw;
-    width: 7vw;
+    width: 5vw;
   }
   #carousel_show2 {
     position: absolute;
