@@ -1,3 +1,13 @@
+// PARALLAX
+var rellax = new Rellax('.rellax', {
+
+callback: function(position) {
+
+}
+});
+
+
+
 // TUMPERO
 
 const tumpero_page = document.getElementById('tumpero_page')
@@ -37,7 +47,7 @@ exit3.addEventListener('click', () => {
 
 })
 
-// CODE PORTFOLIO
+// CODE TV QUASE
 
 const quase_page = document.getElementById('quase_page')
 const code_quase = document.getElementById('code_quase')
@@ -51,9 +61,7 @@ code_quase.addEventListener('click', () => {
 exit2.addEventListener('click', () => {
 	quase_page.classList.add('close')
 	quase_page.classList.remove('open')
-
 })
-
 
 
 
@@ -68,8 +76,8 @@ exit2.addEventListener('click', () => {
 
 // TEXT CAROUSEL
 
-var carouselSlide2 = document.querySelector('#carousel_slide2')
-var carouselText2 = document.querySelectorAll('#carousel_slide2 div')
+var carouselSlide2 = document.querySelector('#carousel_slide_tumpero_text')
+var carouselText2 = document.querySelectorAll('#carousel_slide_tumpero_text div')
 
 var prevBtn = document.querySelector('#prevBtn')
 var nextBtn = document.querySelector('#nextBtn')
@@ -96,12 +104,12 @@ prevBtn.addEventListener('click', ()=>{
 })
 
 carouselSlide2.addEventListener('transitionend', ()=> {
-	if (carouselText2[counter2].id === 'lastClone2'){
+	if (carouselText2[counter2].id === 'last_clone_tumpero_text'){
 		carouselSlide2.style.transition = 'none'
 		counter2 = carouselText2.length -2 
 		carouselSlide2.style.transform = 'translateY(' + (-size2*counter2) +'px)'
 	}
-	if (carouselText2[counter2].id === 'firstClone2'){
+	if (carouselText2[counter2].id === 'first_clone_tumpero_text'){
 		carouselSlide2.style.transition = 'none'
 		counter2 = carouselText2.length - counter2 
 		carouselSlide2.style.transform = 'translateY(' + (-size2*counter2) +'px)'
@@ -111,8 +119,8 @@ carouselSlide2.addEventListener('transitionend', ()=> {
 
 // MOBILE CAROUSEL
 
-var carouselSlide = document.querySelector('#carousel_slide')
-var carouselImages = document.querySelectorAll('#carousel_slide img')
+var carouselSlide = document.querySelector('#carousel_slide_tumpero')
+var carouselImages = document.querySelectorAll('#carousel_slide_tumpero img')
 
 var prevBtn = document.querySelector('#prevBtn')
 var nextBtn = document.querySelector('#nextBtn')
@@ -139,12 +147,12 @@ prevBtn.addEventListener('click', ()=>{
 })
 
 carouselSlide.addEventListener('transitionend', ()=> {
-	if (carouselImages[counter].id === 'lastClone'){
+	if (carouselImages[counter].id === 'last_clone_tumpero'){
 		carouselSlide.style.transition = 'none'
 		counter = carouselImages.length -2 
 		carouselSlide.style.transform = 'translateY(' + (-size*counter) +'px)'
 	}
-	if (carouselImages[counter].id === 'firstClone'){
+	if (carouselImages[counter].id === 'first_clone_tumpero'){
 		carouselSlide.style.transition = 'none'
 		counter = carouselImages.length - counter 
 		carouselSlide.style.transform = 'translateY(' + (-size*counter) +'px)'
@@ -161,13 +169,16 @@ function expand() {
 
 
 
-// Function to toggle billboard and code images
+/* Function to toggle billboard and code images
 $(function(){
     debugger;
     $(document).on('mouseenter', '#hoverMe', function(){
         $('img').toggleClass('hidden');
     });
 });
+
+*/
+
 
 
 
