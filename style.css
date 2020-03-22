@@ -159,7 +159,7 @@ h3 {
 }
 
 .exit {
-  position: absolute;
+  position: fixed;
   height: 5vh;
   width: 5vh;
   top: 10vh;
@@ -788,6 +788,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
     top: 67%;
     left: 5%;
   }
+
+  .rellax {
+    display: none;
+  }
   #d1 img {
     position: absolute;
     width: 130%;
@@ -838,10 +842,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
   #artwork_page h4{
     position: absolute;
     padding-right: 5vw;
-    top: 7vh;
+    top: 5vh;
     font-size: 2vw;
   }
   .exit {
+    position: fixed;
     top: 3vh;
     height: 3vh;
     width: 3vh;
