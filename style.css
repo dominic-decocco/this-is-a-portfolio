@@ -738,12 +738,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
     width: 35%;
     top: 300px;
     left: 18%;
+    -webkit-tap-highlight-color: transparent;
   }
   #billboard_artwork {
     height: 100px;
     width: 25%;
     top: 150px;
     left: 18%;
+    -webkit-tap-highlight-color: transparent;
   }
   .title {
     z-index: 9;
@@ -850,6 +852,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     top: 3vh;
     height: 3vh;
     width: 3vh;
+    -webkit-tap-highlight-color: transparent;
   }
 
   #code_quase {
@@ -857,18 +860,21 @@ and (-webkit-min-device-pixel-ratio: 1) {
     width: 25%;
     top: 45%;
     left: 55%;
+    -webkit-tap-highlight-color: transparent;
   }
   #code_portfolio {
     height: 40%;
     width: 25%;
     top: 55%;
     left: 0;
+    -webkit-tap-highlight-color: transparent;
   }
   #code_tower {
     height: 40%;
     width: 30%;
     top: 0;
     left: 27%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .title_code {
@@ -936,11 +942,5 @@ and (-webkit-min-device-pixel-ratio: 1) {
     left: 70vw;
     top: 50vh;
   }
-  #buttonandroid {
-    top: 6vh;
-    left: 55vw;
-    width: 5vw;
-  }
-
 
 }
