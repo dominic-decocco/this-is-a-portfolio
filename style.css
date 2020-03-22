@@ -809,12 +809,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   .arrows {
     width: 17%;
-    height: 55%;
+    height: 70%;
     top: 52%;
     left: 46%;
     transform: translate(0, -50%);
     margin-left: 47vw;
-    margin-top: 90vw;
+    margin-top: 85vw;
   }
 
   #code {
@@ -951,7 +951,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     left: 46%;
     transform: translate(0, -50%);
     margin-left: 47vw;
-    margin-top: 90vw;
+    margin-top: 85vw;
   }
   .hyperlink_code {
     top: 15%;
@@ -1055,7 +1055,7 @@ and (orientation: landscape) {
   .img2_code,
   .img3_code,
   .img4_code {
-    width: 500px;
+    width: 450px;
     position: absolute;
     top: 50%;
     left: 45%;
@@ -1066,7 +1066,10 @@ and (orientation: landscape) {
   .img3_code,
   .img4_code {
     top: 150%;
-    width: 500px;
+    width: 450px;
+  }
+  .text_code {
+    width: 30%;
   }
 
   .arrows,
