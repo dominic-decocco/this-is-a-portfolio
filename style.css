@@ -897,12 +897,15 @@ and (-webkit-min-device-pixel-ratio: 1) {
     font-size: 2vw;
   }
   .exit {
-    position: fixed;
-    top: 3vh;
-    height: 3vh;
-    width: 3vh;
+    position: absolute;
+    top: 7vh;
+    height: 4vh;
+    width: 4vh;
     -webkit-tap-highlight-color: transparent;
     z-index: 9;
+  }
+  .exit_fixed {
+    position: fixed;
   }
 
   #code_quase {
