@@ -723,12 +723,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
   #work_content {
     position: relative;
     background-image: url('Images/Image Work Mobile 2.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    top: 0;
+    top: -10px;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     margin-left: auto;
   }
 
@@ -753,7 +753,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   .img1 {
     width: 180vw;
-    left: 50%;
+    left: 55%;
   }
   .img2,
   .img3,
@@ -765,8 +765,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   .arrows {
     width: 7%;
-    height: 90%;
-    top: 52%;
+    height: 70%;
+    top: 51%;
     left: 46%;
     transform: translate(0, -50%);
   }
