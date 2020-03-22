@@ -808,13 +808,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
     transform: translate(-50%, -46%); 
   }
   .arrows {
-    width: 17%;
-    height: 70%;
-    top: 52%;
-    left: 46%;
-    transform: translate(0, -50%);
-    margin-left: 47vw;
-    margin-top: 85vw;
+    width: 7%;
+    position: absolute;
+    height: 69%;
+    top: 19%;
+    left: 36%;
   }
 
   #code {
