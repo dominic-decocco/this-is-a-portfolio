@@ -794,6 +794,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .rellax {
     display: none;
   }
+
+
+
+  /*
   #d1 img {
     position: absolute;
     width: 130%;
@@ -831,6 +835,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
   #d4.down {
     top: 400vh;
   }
+  */
+
+
 
   #gallery_wrap {
     flex-direction: column;
@@ -858,8 +865,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
   #code_quase {
     height:35%;
     width: 25%;
-    top: 45%;
-    left: 55%;
+    top: 50%;
+    left: 50%;
     -webkit-tap-highlight-color: transparent;
   }
   #code_portfolio {
@@ -894,7 +901,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
   .arrows_code {
     width: 7%;
-    height: 70%;
+    height: 55%;
     top: 52%;
     left: 46%;
     transform: translate(0, -50%);
@@ -907,7 +914,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     top: 15%;
     left: 10%;
   }
-
 
   #contact {
     height: 100vh;
@@ -923,7 +929,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     background-position: top;
   }
   #buttonmail {
-    width: 7vh;
+    width: 6vh;
     left: 70vw;
     top: 28vh;
   }
@@ -933,14 +939,74 @@ and (-webkit-min-device-pixel-ratio: 1) {
     top: 39vh;
   }
   #buttongithub {
-    width: 7vh;
+    width: 6vh;
     left: 70vw;
     top: 61vh;
   }
   #buttonbehance {
-    width: 7vh;
+    width: 6vh;
     left: 70vw;
     top: 50vh;
   }
+
+}
+
+@media screen and (max-width: 900px)
+and (orientation: landscape) {
+
+  #work_content {
+    margin-left: 23%;
+  }
+
+
+  #billboard_tumpero {
+    height: 40%;
+    width: 25%;
+    top: 118px;
+    left: 26%;
+  }
+  #billboard_artwork {
+    height: 133px;
+    width: 24%;
+    top: 120px;
+    left: 67%;
+  }
+
+  .rellax {
+    display: none;
+  }
+
+  .img1 {
+    width: 550px;
+    left: 40%;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    width: 190px;
+    left: 44%;
+    transform: translate(-50%, -46%); 
+  }
+
+  .img1_code,
+  .img2_code,
+  .img3_code,
+  .img4_code {
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+  }
+  .img2_code,
+  .img3_code,
+  .img4_code {
+    top: 150%;
+    width: 550px;
+  }
+
+
 
 }
