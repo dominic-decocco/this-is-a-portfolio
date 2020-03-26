@@ -1,3 +1,55 @@
+
+
+
+
+
+
+// JQUERY TO COLLAPSE NAVBAR
+
+function collapseNavbar() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+      
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      
+    }
+}
+
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
+
+
+
+
+
+
+// JQUERY FOR PAGE SCROLLING
+
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+    $('.navbar-toggle:visible').click();
+  }
+});
+
+
+
+
+
+
+
+
 // PARALLAX
 var rellax = new Rellax('.rellax', {
 
@@ -30,6 +82,7 @@ exit.addEventListener('click', () => {
 
 $flag = true;
 $counter = 1;
+var counter = $counter;
 
 $("#prevBtn").click(function() {
     moveImage(false);
@@ -134,6 +187,8 @@ function moveImage(next) {
 			if($counter == 5)
 				$counter--;
 		}
+
+
 		setTimeout(function(){$flag = true;},500);
     }
     
@@ -141,20 +196,20 @@ function moveImage(next) {
 
 
 
-// CODE IMAGE SLIDER
+// QUASE IMAGE SLIDER
 
 $flag = true;
-$counterCode = 1;
+$counterQuase = 1;
 
-$(".prevBtn_code").click(function() {
-    moveImageCode(false);
+$("#prevBtn_quase").click(function() {
+    moveImageQuase(false);
   });
   
-$(".nextBtn_code").click(function() {
-    moveImageCode(true);
+$("#nextBtn_quase").click(function() {
+    moveImageQuase(true);
 });
 
-function moveImageCode(next) {
+function moveImageQuase(next) {
 	if($flag)
 	{
 		$flag = false;
@@ -162,75 +217,174 @@ function moveImageCode(next) {
 		{
 		
 
-			$counterCode++;
+			$counterQuase++;
 
-			if($counterCode==1)
-				$counterCode++;
+			if($counterQuase==1)
+				$counterQuase++;
 
-			if($counterCode==2)
+			if($counterQuase==2)
 			{
-				$(".colorbox1_code").animate({'top':'-100%'});
-				$(".colorbox2_code").animate({'top':'0%'});
-				$(".img1_code").animate({'top':'-50%'},700);
-				$(".img2_code").animate({'top':'50%'},700);
+				$(".colorbox1_quase").animate({'top':'-100%'});
+				$(".colorbox2_quase").animate({'top':'0%'});
+				$(".img1_quase").animate({'top':'-50%'},700);
+				$(".img2_quase").animate({'top':'50%'},700);
 
 			}
 
-			if($counterCode==3)
+			if($counterQuase==3)
 			{
-				$(".colorbox2_code").animate({'top':'-100%'});
-				$(".colorbox3_code").animate({'top':'0%'});
-				$(".img2_code").animate({'top':'-50%'},700);
-				$(".img3_code").animate({'top':'50%'},700);
+				$(".colorbox2_quase").animate({'top':'-100%'});
+				$(".colorbox3_quase").animate({'top':'0%'});
+				$(".img2_quase").animate({'top':'-50%'},700);
+				$(".img3_quase").animate({'top':'50%'},700);
 
 			}
 
-			if($counterCode==4)
+			if($counterQuase==4)
 			{
-				$(".colorbox3_code").animate({'top':'-100%'});
-				$(".colorbox4_code").animate({'top':'0%'});
-				$(".img3_code").animate({'top':'-50%'},700);
-				$(".img4_code").animate({'top':'50%'},700);
+				$(".colorbox3_quase").animate({'top':'-100%'});
+				$(".colorbox4_quase").animate({'top':'0%'});
+				$(".img3_quase").animate({'top':'-50%'},700);
+				$(".img4_quase").animate({'top':'50%'},700);
 
 			}
 
-			if($counterCode > 4)
-				$counterCode = 4;
+			if($counterQuase > 4)
+				$counterQuase = 4;
 		}
 		else {
 
 
 
-			$counterCode--;
-			if($counterCode <= 1)
-				$counterCode = 1;
+			$counterQuase--;
+			if($counterQuase <= 1)
+				$counterQuase = 1;
 			
-			if($counterCode == 3)
+			if($counterQuase == 3)
 			{
-				$(".colorbox4_code").animate({'top':'100%'});
-				$(".colorbox3_code").animate({'top':'0%'});
-				$(".img4_code").animate({'top':'150%'},700);
-				$(".img3_code").animate({'top':'50%'},700);
+				$(".colorbox4_quase").animate({'top':'100%'});
+				$(".colorbox3_quase").animate({'top':'0%'});
+				$(".img4_quase").animate({'top':'150%'},700);
+				$(".img3_quase").animate({'top':'50%'},700);
 			
 			}
-			if($counterCode == 2)
+			if($counterQuase == 2)
 			{
-				$(".colorbox3_code").animate({'top':'100%'});
-				$(".colorbox2_code").animate({'top':'0%'});
-				$(".img3_code").animate({'top':'150%'},700);
-				$(".img2_code").animate({'top':'50%'},700);
+				$(".colorbox3_quase").animate({'top':'100%'});
+				$(".colorbox2_quase").animate({'top':'0%'});
+				$(".img3_quase").animate({'top':'150%'},700);
+				$(".img2_quase").animate({'top':'50%'},700);
 	
 			}
-			if($counterCode == 1)
+			if($counterQuase == 1)
 			{
-				$(".colorbox2_code").animate({'top':'100%'});
-				$(".colorbox1_code").animate({'top':'0%'});
-				$(".img2_code").animate({'top':'150%'},700);
-				$(".img1_code").animate({'top':'50%'},700);
+				$(".colorbox2_quase").animate({'top':'100%'});
+				$(".colorbox1_quase").animate({'top':'0%'});
+				$(".img2_quase").animate({'top':'150%'},700);
+				$(".img1_quase").animate({'top':'50%'},700);
 	
 			}
-			if($counterCode == 4)
-				$counterCode--;
+			if($counterQuase == 4)
+				$counterQuase--;
+		}
+		setTimeout(function(){$flag = true;},500);
+    }
+}
+
+
+
+
+
+// PORTFOLIO IMAGE SLIDER
+
+$flag = true;
+$counterPortfolio = 1;
+
+$("#prevBtn_portfolio").click(function() {
+    moveImagePortfolio(false);
+  });
+  
+$("#nextBtn_portfolio").click(function() {
+    moveImagePortfolio(true);
+});
+
+function moveImagePortfolio(next) {
+	if($flag)
+	{
+		$flag = false;
+		if(next)
+		{
+		
+
+			$counterPortfolio++;
+
+			if($counterPortfolio==1)
+				$counterPortfolio++;
+
+			if($counterPortfolio==2)
+			{
+				$(".colorbox1_portfolio").animate({'top':'-100%'});
+				$(".colorbox2_portfolio").animate({'top':'0%'});
+				$(".img1_portfolio").animate({'top':'-50%'},700);
+				$(".img2_portfolio").animate({'top':'50%'},700);
+
+			}
+
+			if($counterPortfolio==3)
+			{
+				$(".colorbox2_portfolio").animate({'top':'-100%'});
+				$(".colorbox3_portfolio").animate({'top':'0%'});
+				$(".img2_portfolio").animate({'top':'-50%'},700);
+				$(".img3_portfolio").animate({'top':'50%'},700);
+
+			}
+
+			if($counterPortfolio==4)
+			{
+				$(".colorbox3_portfolio").animate({'top':'-100%'});
+				$(".colorbox4_portfolio").animate({'top':'0%'});
+				$(".img3_portfolio").animate({'top':'-50%'},700);
+				$(".img4_portfolio").animate({'top':'50%'},700);
+
+			}
+
+			if($counterPortfolio > 4)
+				$counterPortfolio = 4;
+		}
+		else {
+
+
+
+			$counterPortfolio--;
+			if($counterPortfolio <= 1)
+				$counterPortfolio = 1;
+			
+			if($counterPortfolio == 3)
+			{
+				$(".colorbox4_portfolio").animate({'top':'100%'});
+				$(".colorbox3_portfolio").animate({'top':'0%'});
+				$(".img4_portfolio").animate({'top':'150%'},700);
+				$(".img3_portfolio").animate({'top':'50%'},700);
+			
+			}
+			if($counterPortfolio == 2)
+			{
+				$(".colorbox3_portfolio").animate({'top':'100%'});
+				$(".colorbox2_portfolio").animate({'top':'0%'});
+				$(".img3_portfolio").animate({'top':'150%'},700);
+				$(".img2_portfolio").animate({'top':'50%'},700);
+	
+			}
+			if($counterPortfolio == 1)
+			{
+				$(".colorbox2_portfolio").animate({'top':'100%'});
+				$(".colorbox1_portfolio").animate({'top':'0%'});
+				$(".img2_portfolio").animate({'top':'150%'},700);
+				$(".img1_portfolio").animate({'top':'50%'},700);
+	
+			}
+			if($counterPortfolio == 4)
+				$counterPortfolio--;
 		}
 		setTimeout(function(){$flag = true;},500);
     }
@@ -267,12 +421,12 @@ billboard_artwork.addEventListener('click', () => {
 	artwork_page.classList.remove('close')
 	work.classList.add('expand')
 	work.classList.remove('contract')
-	d1.classList.add('up')
-	d1.classList.remove('down')
-	d3.classList.add('up')
-	d3.classList.remove('down')
-	d4.classList.add('up')
-	d4.classList.remove('down')
+	d1.classList.add('move')
+	d1.classList.remove('moveback')
+	d3.classList.add('move')
+	d3.classList.remove('moveback')
+	d4.classList.add('move')
+	d4.classList.remove('moveback')
 })
 
 exit3.addEventListener('click', () => {
@@ -280,13 +434,12 @@ exit3.addEventListener('click', () => {
 	artwork_page.classList.remove('open')
 	work.classList.add('contract')
 	work.classList.remove('expand')
-	d1.classList.add('down')
-	d1.classList.remove('up')
-	d3.classList.add('down')
-	d3.classList.remove('up')
-	d4.classList.add('down')
-	d4.classList.remove('up')
-
+	d1.classList.add('moveback')
+	d1.classList.remove('move')
+	d3.classList.add('moveback')
+	d3.classList.remove('move')
+	d4.classList.add('moveback')
+	d4.classList.remove('move')
 })
 
 // OPEN TV QUASE
@@ -349,13 +502,6 @@ $(function(){
 });
 
 */
-
-
-
-
-
-
-
 
 
 

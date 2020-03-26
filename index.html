@@ -4,10 +4,39 @@
 	<meta charset="UTF-8">
 	<title>This is a Portfolio</title>
 	<link rel="stylesheet" href="style.css">
-	<meta http-equiv="refresh" content="" >
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="width=device-width">
+	<link href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/503833/style.css' rel='stylesheet' type='text/css'>
+	<link href='https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js' type='text/javascript'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'><link rel="stylesheet" href="./style.css">
 </head>
-<body>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
+  
+
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+	        <span><img src="Images/BurgerMenu.svg" alt="" id="burger_menu"></span>
+	      </button>
+	      
+	    </div>
+	    <div class="navbar-collapse navbar-right navbar-main-collapse collapse" aria-expanded="false">
+	        <ul class="nav navbar-nav">
+	          <li><a href="#about">profile</a></li>
+	          <li><a href="#work">work</a></li>
+	          <li><a href="#quase_page">code</a></li>
+	          <li><a href="#contact">contact</a></li>
+	        </ul>
+	    </div>
+	  </div>
+	</nav>
+  
+
+
+
+
 	<section id="home">
 		
 		<p id="h3">this is a</p>
@@ -23,22 +52,22 @@
 		about Graphic Design. First introduced
 		to Photoshop and Illustrator in the early
 		days of college. Self-taught and fast learner, 
-		I started my own App at 24, and months later reached
+		I started my own App at 24 and months later reached
 		to JavaScript, HTML and CSS in order to enhance it. <br> <br>
 
 		Merging the skills of a designer and front-end developer
-		allows me to cover a lot of bases on the client side, and puts me
+		allows me to cover a lot of bases on the client side and places me
 		in a privileged position to enjoy the creative process and 
 		feel gratified by the problem solving. <br> <br>
 
 		Currently getting involved with React Native and
-		3D modeling. Living in Dublin but looking foward
+		3D modeling. Living in Dublin but looking forward
 		to <br>moving to Spain or Portugal.  <br> <br>
 
 		Brazilian, 28 years old, can’t settle until <br>
 		the perfect font is found. </p>
-		<img src="Images/Files Cabinet.svg" alt="" id="cabinet">
-		<img src="Images/Spilled Coffee.svg" alt="" id="spilled_coffee">
+		<img src="Images/FilesCabinet.svg" alt="" id="cabinet">
+		<img src="Images/SpilledCoffee.svg" alt="" id="spilled_coffee">
 
 	</section>
 
@@ -57,22 +86,22 @@
 
 		<div id="tumpero_page">
 
-			<img src="Images/Mobile Logo.png" alt="" class="img1">
-			<img src="Images/Mobile Restaurantes.png" alt="" class="img2">
-			<img src="Images/Mobile Dia.png" alt="" class="img3">
-			<img src="Images/Mobile Data.png" alt="" class="img4">
-			<img src="Images/Mobile Push.png" alt="" class="img5">
+			<img src="Images/MobileLogo.png" alt="" class="img1">
+			<img src="Images/MobileRestaurantes.png" alt="" class="img2">
+			<img src="Images/MobileDia.png" alt="" class="img3">
+			<img src="Images/MobileData.png" alt="" class="img4">
+			<img src="Images/MobilePush.png" alt="" class="img5">
 
 			<div class="box1">
 				<div class="title">Tumpero</div>
-				<a href="https://play.google.com/store/apps/details?id=com.goodbarber.tumpero&hl=en_IE" class="hyperlink_website" target="_blank">go to google store</a>
+				<a href="https://play.google.com/store/apps/details?id=com.goodbarber.tumpero&hl=en_IE" class="hyperlink_code" target="_blank">go to google store</a>
 				
 				<div class="arrows">
 					<div class="arrow_top">
-						<img src="Images/Arrow Top.svg" alt="" id="prevBtn">
+						<img src="Images/ArrowTop.svg" alt="" id="prevBtn">
 					</div>
 					<div class="arrow_down">
-						<img src="Images/Arrow Bottom.svg" alt="" id="nextBtn">
+						<img src="Images/ArrowBottom.svg" alt="" id="nextBtn">
 					</div>
 				</div>
 
@@ -81,17 +110,17 @@
 
 			<div class="box2">
 				<div class="colorbox1">
-					<div class="text">In the last year of college, my flatmate and I started a website gathering all information about our city's restaurant and bars, always highlighting the discounts: June 16th, 2016 Tumpero was live as the first gastronomic city guide. The restaurants would pay a monthly fee in order to be listed and advertised.<br><br>As the user base and affiliated establishments grew quickly, we had to shift to a mobile app in only 6 months <br><br><span>1/5 • Tumpero's Logo and In-App screenshot (Tumpero is a variation af the word 'seasoning' in Portuguese)</span></div>
+					<div class="text">In the last year of college, my flatmate and I founded a website gathering all information about our city's restaurant and bars, always highlighting the discounts: June 16th, 2016, Tumpero was live as the first gastronomic city guide. The restaurants would pay a monthly fee in order to be listed and advertised.<br><br>As the user base and affiliated establishments grew quickly, we had to shift to a mobile app in only 6 months <br><br><span>1/5 • Tumpero's Logo and In-App screenshot (Tumpero is a variation of the word 'seasoning' in Portuguese)</span></div>
 				</div>
 				<div class="colorbox2">
 					<div class="text white">A quick and seamless way to make that transition was to use a platform called GoodBarber to create the App. Even though it delivered what we needed to start, our new ideas became limited by the platform's features. <br><br>I had to reach for HTML, CSS and JS in order to tweak and improve Tumpero the way we wanted. A couple of months later, I was splitting my work hours into graphic design and front-end development<span> <br><br>2/5 • List of restaurants</span></div>
 				</div>
 				<div class="colorbox3">
-					<div class="text white">I was in charge of the creative process and its implementation through coding. The branding, logo, the design behind the app and social media content were all under my umbrella. <br><br>However, my absolute passion was the poster design for some of our campaigns. The freedom to choose any creative direction and later seeing a huge print of your work on the street is just incredibly satisfying to me <br><br><span class="white">3/5 • The deals could be sorted by day of the week</span></div>
+					<div class="text white">I was in charge of the creative process and its implementation through coding. The branding, logo, the design behind the app and social media content were all under my umbrella. <br><br>However, my absolute passion was the poster design for some of our campaigns. The freedom to decide on any creative direction and later seeing a huge print of your work on the street is just incredibly satisfying to me <br><br><span class="white">3/5 • The deals could be sorted by day of the week</span></div>
 				</div>
 
 				<div class="colorbox4">
-					<div class="text">At the end of 2017 - with 4 team members - we reached the mark of 100 establishments signed to the App and the data feedback continued to surpass our expectations: <br><br>In December we had 15,772 sessions, 102,659 pageviews and 1,732 downloads with an average visit duration of 4 minutes. <br><br><span>4/5 • Monthly data report</span></div>
+					<div class="text">At the end of 2017, with four team members, we reached the mark of 100 establishments signed to the App and the data feedback continued to surpass our expectations: <br><br>In December we had 15,772 sessions, 102,659 pageviews and 1,732 downloads with an average visit duration of 4 minutes. <br><br><span>4/5 • Monthly data report</span></div>
 				</div>
 
 				<div class="colorbox5">
@@ -114,8 +143,8 @@
 			
 			<div id="tower">
 				<h3>Tower Records reDesign</h3>
-				<h4>One of my favourite places in Dublin. Users should feel as if they were entering the physical store: surrounded by album covers. I chose a minimalistic approach for the menus and let the artwork do the talking. <a href="https://www.behance.net/gallery/92644459/Tower-Records-Re-Design" target="_blank">Full project here</a></h4>
-				<div id="gallery_wrap">
+				<h4>One of my favourite places in Dublin. Users should feel as if they were entering the physical store: surrounded by album covers. I decided on a minimalistic approach for the menus and let the artwork do the talking. <a href="https://www.behance.net/gallery/92644459/Tower-Records-Re-Design" target="_blank">Full project here</a></h4>
+				<div class="gallery_wrap">
 					<div class="item item21" onclick="expand()"></div>
 					<div class="item item22" onclick="expand()"></div>
 					<div class="item item23" onclick="expand()"></div>
@@ -127,8 +156,8 @@
 
 			<div id="julia">
 				<h3>Julia of Clubs</h3>
-				<h4>Gig poster and concept for Julia Jacklin's concert in Dublin, 2019. The timelessness of playing cards's figures has always intrigued me, sort of a reminiscence from medieval times. I tried to replicate this serene sadness that Julia carries with her music and personality over the drawing. <a href="https://www.behance.net/gallery/88753913/Julia-of-Clubs" target="_blank">Full Project here</a></h4>
-				<div id="gallery_wrap">
+				<h4>Gig poster and concept for Julia Jacklin's concert in Dublin, 2019. The timelessness of playing cards' figures has always intrigued me, sort of a reminiscence from medieval times. I tried to replicate this serene sadness that Julia carries with her music and personality over the drawing. <a href="https://www.behance.net/gallery/88753913/Julia-of-Clubs" target="_blank">Full Project here</a></h4>
+				<div class="gallery_wrap">
 					<div class="item item6" onclick="expand()"></div>
 					<div class="item item7" onclick="expand()"></div>
 					<div class="item item8" onclick="expand()"></div>
@@ -141,7 +170,7 @@
 			<div id="cartaz">
 				<h3>Cartaz</h3>
 				<h4>Series of Brazilian movie posters, because the world can only take so many Pulp Fiction ones. The project was published on <a href="https://www.facebook.com/pseudocinefilos/posts/2925426087522880">Facebook</a> by one the biggest Brazilian cinephile pages: Pseudo Cinéfilos. <a href="https://www.behance.net/gallery/90323997/CARTAZ" target="_blank">Full project here</a></h4>
-				<div id="gallery_wrap">
+				<div class="gallery_wrap">
 					<div class="item item11" onclick="expand()"></div>
 					<div class="item item12" onclick="expand()"></div>
 					<div class="item item13" onclick="expand()"></div>
@@ -154,7 +183,7 @@
 			<div id="mac">
 				<h3>Mac's Hot Sushi Dog</h3>
 				<h4>My first gig poster back in 2015 for Mac Demarcos's concert at The Neptune in Seattle. The illustration was inspired by Mac's own lifestyle: cheap beer, Viceroy cigarettes and disfavour for fancy food. "I'm like the richest bum" - Mac. <a href="https://www.behance.net/gallery/84104967/Macs-Hot-Sushi-Dog" target="_blank">Full project here</a></h4>
-				<div id="gallery_wrap">
+				<div class="gallery_wrap">
 					<div class="item item1" onclick="expand()"></div>
 					<div class="item item2" onclick="expand()"></div>
 					<div class="item item3" onclick="expand()"></div>
@@ -166,8 +195,8 @@
 
 			<div id="ad_tumpero">
 				<h3>Tumpero Ad Campaigns</h3>
-				<h4>One of the Tumpero's advertising campaigns. This one was targeted at college students through social media and printed material all over campus. It enphasized how many restaurants they didn't know by keep going to the same places. Because frankly, my dear, we did give a damn. <a href="https://www.behance.net/gallery/82796939/Tumpero-App-Ads" target="_blank">Full project here</a></h4>
-				<div id="gallery_wrap">
+				<h4>One of the Tumpero's advertising campaigns. This one was targeted at college students through social media and printed material all over campus. It emphasized how many restaurants they didn't know by keep going to the same places. Because frankly, my dear, we did give a damn. <a href="https://www.behance.net/gallery/82796939/Tumpero-App-Ads" target="_blank">Full project here</a></h4>
+				<div class="gallery_wrap">
 					<div class="item item16" onclick="expand()"></div>
 					<div class="item item17" onclick="expand()"></div>
 					<div class="item item18" onclick="expand()"></div>
@@ -187,7 +216,7 @@
 
 	</section>
 	<section id="code">
-		
+
 		<h3 id="h3_code">Code</h3>
 		<div id="code_content">
 
@@ -203,25 +232,25 @@
 		</div>
 		
 		<div class="rellax" id="d1" data-rellax-speed="">
-		  <img src="Images/Meteor 2.png" alt=""/>
+		  <img src="Images/Meteor2.png" alt=""/>
 		</div>
 
 		<div class="rellax" id="d3" data-rellax-speed="8">
-			<img src="Images/Meteor 3.png" alt=""/>
+			<img src="Images/Meteor3.png" alt=""/>
 		</div>
 
 		<div class="rellax" id="d4" data-rellax-speed="4">
-			<img src="Images/Meteor 4.png" alt=""/>
+			<img src="Images/Meteor4.png" alt=""/>
 		</div>
 		
 
 		<div id="quase_page">
 			
 
-			<img src="Images/Mac Quase.png" alt="" class="img1_code">
-			<img src="Images/Mac Falha.png" alt="" class="img2_code">
-			<img src="Images/Mac Choque.png" alt="" class="img3_code">
-			<img src="Images/Mac OUPM.png" alt="" class="img4_code">
+			<img src="Images/MacQuase.png" alt="" class="img1_quase">
+			<img src="Images/MacFalha.png" alt="" class="img2_quase">
+			<img src="Images/MacChoque.png" alt="" class="img3_quase">
+			<img src="Images/MacOUPM.png" alt="" class="img4_quase">
 
 			<div class="box1">
 
@@ -231,10 +260,10 @@
 				
 				<div class="arrows_code">
 					<div class="arrow_top">
-						<img src="Images/Arrow Top.svg" alt="" class="prevBtn_code">
+						<img src="Images/ArrowTop.svg" alt="" id="prevBtn_quase">
 					</div>
 					<div class="arrow_down">
-						<img src="Images/Arrow Bottom.svg" alt="" class="nextBtn_code">
+						<img src="Images/ArrowBottom.svg" alt="" id="nextBtn_quase">
 					</div>
 				</div>
 
@@ -242,22 +271,22 @@
 
 
 			<div class="box2_code">
-				<div class="colorbox1_code">
+				<div class="colorbox1_quase">
 					<div class="text_code"><i>Tell me with whom you walk: </i><br><br>
-						One of the trendiest production companies in Brasil right now, Tv Quase, is creating the most daring and smart comedy shows, both for youtube and television. Every show has a completely different theme and aesthetic, so I used it to build the website's design: every section has its own niche <span><br><br>1/4 • Home screen inspired by glued street posters</span></div>
+						One of the trendiest production companies in Brazil right now, Tv Quase, is creating the most daring and smart comedy shows, both for youtube and tv. Every show has a unique theme and aesthetic, so I used it to develop the website's design: every section has its own niche <span><br><br>1/4 • Home screen inspired by glued street posters</span></div>
 				</div>
-				<div class="colorbox2_code">
+				<div class="colorbox2_quase">
 					<div class="text_code white"><i>Let me do the talking: </i><br><br>
 						The moodboard was created quickly after watching the shows. This section's aesthetic alludes to football sticker album and newspaper's images on halftone effect, and the next ones to cinephile environment and green screen chroma key<span> <br><br>2/4 • Falha de Cobertura is a satire of sports shows aired on SporTV</span></div>
 				</div>
-				<div class="colorbox3_code">
+				<div class="colorbox3_quase">
 					<div class="text_code white"><i>Simplicity is the ultimate sophistication: </i><br><br>
 						As one of my first website projects, the whole structure is based on simple HTML and CSS, taking advantage of grids to easily position the elements and vanilla JavaScript for the top menu<br><br><span class="white">3/4 • Choque de Cultura has become absolute pop culture since 2018</span></div>
 				</div>
 
-				<div class="colorbox4_code">
+				<div class="colorbox4_quase">
 					<div class="text_code"><i>No half measures, Walter: </i><br><br>
-						The website is fully responsive, being designed from scratch for both desktop and mobile, not only shrank by breakpoints<br><br><span>4/4 • "The Last Show on Earth" is a low budget series aired on MTV, using poor green screens effects to create this 90's aesthetic</span></div>
+						The website is fully responsive, being designed from scratch for both desktop and mobile, not only shrank by breakpoints<br><br><span>4/4 • "The Last Show on Earth" is a low-budget series aired on MTV, using poor green screens effects to create this 90's aesthetic</span></div>
 				</div>
 
 			</div>
@@ -277,22 +306,22 @@
 
 		<div id="portfolio_page">
 
-			<img src="Images/Mac Portfolio Logo.png" alt="" class="img1_code">
-			<img src="Images/Mac Wireframe Space.png" alt="" class="img2_code">
-			<img src="Images/Mac Wireframe Contact.png" alt="" class="img3_code">
-			<img src="Images/Mac Wireframe Work.png" alt="" class="img4_code">
+			<img src="Images/MacPortfolioLogo.png" alt="" class="img1_portfolio">
+			<img src="Images/MacWireframeSpace.png" alt="" class="img2_portfolio">
+			<img src="Images/MacWireframeContact.png" alt="" class="img3_portfolio">
+			<img src="Images/MacWireframeWork.png" alt="" class="img4_portfolio">
 			
 			<div class="box1">
 
 				<div class="title_code">Portfolio</div>
-				<a href="https://github.com/dominic-decocco/this-is-a-portfolio" target="_blank" class="hyperlink_website">go to code</a>
+				<a href="https://github.com/dominic-decocco/this-is-a-portfolio" target="_blank" class="hyperlink_code">go to code</a>
 
 				<div class="arrows_code">
 					<div class="arrow_top">
-						<img src="Images/Arrow Top.svg" alt="" class="prevBtn_code">
+						<img src="Images/ArrowTop.svg" alt="" id="prevBtn_portfolio">
 					</div>
 					<div class="arrow_down">
-						<img src="Images/Arrow Bottom.svg" alt="" class="nextBtn_code">
+						<img src="Images/ArrowBottom.svg" alt="" id="nextBtn_portfolio">
 					</div>
 				</div>
 
@@ -300,22 +329,22 @@
 
 
 			<div class="box2_code">
-				<div class="colorbox1_code">
+				<div class="colorbox1_portfolio">
 					<div class="text_code"><i>I did it my way: </i><br><br>
-					To a graphic designer, Portfolio is key. To a graphic designer slash front-end developer, the website <i>is</i> the portfolio. <br><br> My first thoughts of showcasing the work on Behance were quickly erased by the necessity to make this project as personal as a tooth brush: 100% ahead of the art direction, design process and coding (except for one question on Stackoverflow) <span><br><br>1/4</span></div>
+					To a graphic designer, Portfolio is key. To a graphic designer slash front-end developer, the website <i>is</i> the portfolio. <br><br> My initial thoughts of showcasing the work on Behance were quickly erased by the necessity to make this project as personal as a tooth brush: 100% ahead of the art direction, design process and coding (except for one question on Stackoverflow) <span><br><br>1/4</span></div>
 				</div>
-				<div class="colorbox2_code">
+				<div class="colorbox2_portfolio">
 					<div class="text_code white"><i>Second guessing the stroke weight: </i><br><br>
-					Honestly, the biggest challlenge I faced was to not have a deadline or client approval, which made me prolong the creation process on Illustrator.<br><br>Inspiration came from 2 places: the colors and typography from <a href="https://toyfight.co/">Toy Fight</a> and low poly/3d concept from <a href="https://useplink.com/en/">Plink</a>. Once the low poly aesthetic was choosen, the portfolio was put together in a couple of weeks <span> <br><br>2/4</span></div>
+					Honestly, the biggest challenge I faced was to not have a deadline or client approval, which made me prolong the creation process on Illustrator.<br><br>Inspiration came from two places: the colors and typography from <a href="https://toyfight.co/">Toy Fight</a> and low poly/3d concept from <a href="https://useplink.com/en/">Plink</a>. Once the low poly aesthetic was chosen, the portfolio was put together in a couple of weeks <span> <br><br>2/4</span></div>
 				</div>
-				<div class="colorbox3_code">
+				<div class="colorbox3_portfolio">
 					<div class="text_code white"> <i>Box layout is not my cup of tea: </i><br><br>
-					As it's clear on most of my websites, I like to create sections that bleed into the next, so the whole project would tell a story and feel like a natural flow, compelling the user to keep scrolling. I'll separate content into boxes when the client is the government. <br><br>The whole portfolio was made on a single HTML file, for two reasons: as a "story being told", I didn't want the user to step out of it by loading another page and also, there's not that much content to fill two pages <br><br><span class="white">3/4</span></div>
+					As it's clear on most of my websites, I like to create sections that bleed into the next, so the whole project would tell a story in a natural flow, compelling the user to keep scrolling. I'll separate content into boxes when the client is the government. <br><br>The whole portfolio was made on a single HTML file, for two reasons: as a "story being told", I didn't want the user to step out of it by loading another page and also, there's not that much content to fill two pages <br><br><span class="white">3/4</span></div>
 				</div>
 
-				<div class="colorbox4_code">
+				<div class="colorbox4_portfolio">
 					<div class="text_code"><i>Nerding out a bit: </i><br><br>
-					As this portfolio is basically one big illustration, the hardest part was to create, size and position every single element to fit their specific part and, at the same time, be responsive with only one media query: <i>'To use pixels or viewports? That's the question'. </i><br><br>For the image sliders I reached for a little bit of logic on Jquery and created a couple of handlers, no biggy. <br>Some vanilla JS to trigger section openings and parallax effect for the meteors to roll cool <br><br><span>4/4</span></div>
+					As this portfolio is basically one big illustration, the hardest part was to create, size and position every single element to fit their specific space and, at the same time, be responsive with only one media query: <i>'To use pixels or viewports? That's the question'. </i><br><br>For the image sliders I reached for a little bit of logic on Jquery and created a couple of handlers, no biggy. <br>Some vanilla JS to trigger section openings and parallax effect for the meteors to roll cool <br><br><span>4/4</span></div>
 				</div>
 
 			</div>
@@ -334,19 +363,22 @@
 	</section>
 	<section id="contact">
 		
-		<h3>Contact</h3>
+		<h3 id="h3_contact">Contact</h3>
 		
 		<a href="https://www.behance.net/matheusmonteiro1" target="_blank">
-				<img src="Images/Button Behance.svg" alt="" id="buttonbehance">
+				<img src="Images/ButtonBehance.svg" alt="" id="buttonbehance">
 		</a>
 		<a href="https://github.com/dominic-decocco" target="_blank">
-				<img src="Images/Button Github.svg" alt="" id="buttongithub">
+				<img src="Images/ButtonGithub.svg" alt="" id="buttongithub">
 		</a>
 		<a href="https://www.linkedin.com/in/matheus-monteiro-091/" target="_blank">
-				<img src="Images/Button Linkedin.svg" alt="" id="buttonlinkedin">
+				<img src="Images/ButtonLinkedin.svg" alt="" id="buttonlinkedin">
 		</a>
 		<a href="mailto:mmonteiro.182@gmail.com?Subject=Portfolio%20Contact" target="_top">
-				<img src="Images/Button Mail.svg" alt="" id="buttonmail">
+				<img src="Images/ButtonMail.svg" alt="" id="buttonmail">
+		</a>
+		<a href="Images/ButtonCV.svg" download="CV_Matheus_Monteiro">
+				<img src="Images/ButtonCV.svg" alt="" id="buttoncv">
 		</a>
 		
 		
@@ -366,19 +398,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 
 
 
@@ -387,7 +409,7 @@
 
 	<script src="rellax.js"></script>
 	<script src="jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
 
 
 </body>
