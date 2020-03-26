@@ -1023,7 +1023,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .gallery_wrap {
     flex-direction: column;
     height: 80vh;
-    margin-top: 15vh;
+    margin-top: 12vh;
   }
   #artwork_page h3 {
     font-size: 5vw;
